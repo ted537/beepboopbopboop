@@ -1,0 +1,67 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background: #f8f8f8; 
+    color: #333; 
+    min-height: 100vh; 
+    display: flex;
+    /* This should be column definitely for mobile.
+    *  However, it actually looks pretty nice
+    *  in row for desktop. */
+    flex-direction: column;
+}
+header, footer { 
+    background: #222; 
+    color: white; 
+    text-align: center; 
+    padding: 1em 0; 
+}
+main { 
+    width: calc(min(800px,100% - 4em)); 
+    margin: auto; 
+    padding: 2em; 
+    background: white; 
+    flex: 1; 
+}
+
+.button {
+    background: blue;
+    border-radius: 0.4em;
+    color: white;
+    padding: 0.3em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    text-decoration: none;
+}
+
+main p,li {
+    line-height: 2;
+}
+
+main section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+header .subtitle {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        flex-direction: row;
+    }
+    header {
+        width: 200px;
+    }
+    header .title span {
+        display: block;
+    }
+    header .subtitle {
+        display: block;
+    }
+    footer {
+        display: none;
+    }
+}
