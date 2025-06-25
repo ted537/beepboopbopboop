@@ -1,6 +1,0 @@
-name = "beepboopbopboop"
-type = "webpack"
-
-# Static site config
-[site]
-bucket = "./assets"       # Path to your static assets
